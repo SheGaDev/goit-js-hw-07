@@ -11,24 +11,8 @@ galleryEl.insertAdjacentHTML("beforeend", galleryItems
   />
 </a>
 </div>`).join("\n"));
-// let instance;
-// const onClick = (e) => {
-//     e.preventDefault();
-//     if (e.target.classList.contains("gallery")) return;
-//     const source = e.target.dataset.source;
-//     instance = basicLightbox.create(`<img src="${source}">`);
-//     instance.show();
-// };
-// const onEscape = (e) => {
-//     if (e.code !== "Escape"
-//         || !instance) return;
-//     instance.close();
-//     instance = null;
-// }
-// galleryEl.addEventListener("click", onClick);
-// galleryEl.addEventListener("keydown", onEscape);
 new SimpleLightbox(".gallery a", {
     captionsData: "alt",
     captionDelay: 250,
     captionType: "alt",
-  });
+});
