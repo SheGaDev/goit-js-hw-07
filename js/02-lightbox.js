@@ -10,9 +10,8 @@ galleryEl.insertAdjacentHTML("beforeend", galleryItems
     alt="${description}"
   />
 </a>
-</div>`).join("\n"));
+</div>`).join(""));
 new SimpleLightbox(".gallery a", {
     captionsData: "alt",
-    captionDelay: 250,
-    captionType: "alt",
+    captionDelay: 250
 });
